@@ -1,3 +1,6 @@
+import girl from './assets/image/girl.png'
+import play from './assets/icons/play.svg'
+
 export const home = () => {
 
     const content = document.querySelector('#content')
@@ -5,15 +8,17 @@ export const home = () => {
     home.classList.add('home')
     home.innerHTML = `
     <div class='content-wrap'>
-        <h1>dive into delights of delectable <span>food</span></h1>
-        <p>Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-        <div class='button-wrap'>
-            <button>order now</button>
-            <button>watch video</button>
+        <div>
+            <h1>dive into delights of delectable <span>food</span></h1>
+            <p>Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
+            <div class='button-wrap'>
+                <button>order now</button>
+                <button>watch video <span><img src='${play}' alt=''></span></button>
+            </div>
         </div>
     </div>
     <div class='image-wrap'>
-        <img src="" alt="">
+        <img src='${girl}' alt="girl eating and smiling">
     </div>
     `
 

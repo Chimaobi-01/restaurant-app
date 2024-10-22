@@ -9,11 +9,30 @@
 
 <body>
     <header>
+        <div class="logo">
+            <span><img src="./assets/icons/F.svg" alt="F"></span>
+            <span><img src="./assets/icons/oodi.svg" alt="oodi"></span>
+        </div>
         <nav>
-            <buttton id="home-btn">Home</buttton>
-            <buttton id="menu-btn">Menu</buttton>
-            <buttton id="about-btn">About</buttton>
+            <buttton id="home-btn" class="nav-item">Home</buttton>
+            <buttton id="menu-btn" class="nav-item">Menu <img src="./assets/icons/arrow-down.svg" alt="dropdown icon"></buttton>
+            <buttton id="services-btn" class="nav-item">Services <img src="./assets/icons/arrow-down.svg" alt="dropdown icon"></buttton>
+            <buttton id="about-btn" class="nav-item">About <img src="./assets/icons/arrow-down.svg" alt="dropdown icon"></buttton>
+            <!-- <buttton id="about-btn">About</buttton> -->
         </nav>
+        <ul>
+            <li><img src="./assets/icons/search.svg" alt="search"></li>
+            <li>
+                <img src="./assets/icons/bag.svg" alt="cart">
+                <span>8</span>
+            </li>
+            <li>
+                <a href="tel:+2349039561136">
+                    <img src="./assets/icons/call.svg" alt="tel">
+                    Contact
+                </a>
+            </li>
+        </ul>
     </header>
     <div id="content"></div>
 </body>
